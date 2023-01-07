@@ -25,7 +25,6 @@ int main()
                     matriz[linha][coluna] = linha - coluna + 1;
             }
 
-        // Imprime a matriz;
         for (linha = 0; linha < tamanho; linha++)
         {
             for (coluna = 0; coluna < tamanho; coluna++)
