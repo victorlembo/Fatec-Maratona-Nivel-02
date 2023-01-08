@@ -3,11 +3,11 @@
 int main()
 {
 
-    float m[12][12], soma = 0, media = 0, elemento;
-    int i, j, coluna;
-    char operacao;
+    float matriz[12][12], elemento, soma = 0, media = 0;
+    int i, j, col;
+    char op;
 
-    scanf("%d %c", &coluna, &operacao);
+    scanf("%d %c", &col, &op);
 
     for (i = 0; i < 12; i++)
     {
@@ -16,21 +16,21 @@ int main()
         {
 
             scanf("%f", &elemento);
-            m[i][j] = elemento;
+            matriz[i][j] = elemento;
         }
     }
 
-    if (operacao == 'S')
+    if (op == 'S')
     {
 
-        j = coluna;
-        while (j == coluna)
+        j = col;
+        while (j == col)
         {
 
             for (i = 0; i < 12; i++)
             {
 
-                soma += m[i][j];
+                soma += matriz[i][j];
             }
 
             j++;
@@ -41,17 +41,17 @@ int main()
     else
     {
 
-        if (operacao == 'M')
+        if (op == 'M')
         {
 
-            j = coluna;
-            while (j == coluna)
+            j = col;
+            while (j == col)
             {
 
                 for (i = 0; i < 12; i++)
                 {
 
-                    media += m[i][j];
+                    media += matriz[i][j];
                 }
 
                 j++;
